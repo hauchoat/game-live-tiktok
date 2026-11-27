@@ -1,0 +1,64 @@
+{
+  "chunkLengthRange": [20, 30],
+  "milestoneMeters": 500,
+  "chunks": [
+    {
+      "id": "easy_gold_run",
+      "length": 24,
+      "hard": false,
+      "rows": [
+        { "offsetZ": 4, "obstacles": [{ "lane": 0, "type": "fence" }], "goldLane": 1 },
+        { "offsetZ": 13, "obstacles": [{ "lane": 2, "type": "yarn" }], "goldLane": 1 },
+        { "offsetZ": 20, "obstacles": [{ "lane": 1, "type": "fence" }], "goldLane": 2 }
+      ]
+    },
+    {
+      "id": "zigzag_lanes",
+      "length": 26,
+      "hard": false,
+      "rows": [
+        { "offsetZ": 4, "obstacles": [{ "lane": 0, "type": "fence" }, { "lane": 2, "type": "fence" }], "goldLane": 1 },
+        { "offsetZ": 13, "obstacles": [{ "lane": 1, "type": "hole" }], "goldLane": 0 },
+        { "offsetZ": 22, "obstacles": [{ "lane": 0, "type": "yarn" }, { "lane": 1, "type": "gate" }], "goldLane": 2 }
+      ]
+    },
+    {
+      "id": "yarn_alley",
+      "length": 22,
+      "hard": false,
+      "rows": [
+        { "offsetZ": 5, "obstacles": [{ "lane": 1, "type": "yarn" }], "goldLane": 0 },
+        { "offsetZ": 14, "obstacles": [{ "lane": 0, "type": "fence" }, { "lane": 2, "type": "hole" }], "goldLane": 1 }
+      ]
+    },
+    {
+      "id": "hard_dog_gauntlet",
+      "length": 28,
+      "hard": true,
+      "rows": [
+        { "offsetZ": 4, "obstacles": [{ "lane": 0, "type": "dog" }, { "lane": 1, "type": "fence" }], "goldLane": 2 },
+        { "offsetZ": 14, "obstacles": [{ "lane": 0, "type": "dog" }, { "lane": 2, "type": "hole" }], "goldLane": 1 },
+        { "offsetZ": 24, "obstacles": [{ "lane": 1, "type": "hole" }, { "lane": 2, "type": "dog" }], "goldLane": 0 }
+      ]
+    },
+    {
+      "id": "hard_double_squeeze",
+      "length": 30,
+      "hard": true,
+      "rows": [
+        { "offsetZ": 4, "obstacles": [{ "lane": 1, "type": "hole" }, { "lane": 2, "type": "yarn" }], "goldLane": 0 },
+        { "offsetZ": 14, "obstacles": [{ "lane": 0, "type": "gate" }, { "lane": 2, "type": "fence" }], "goldLane": 1 },
+        { "offsetZ": 24, "obstacles": [{ "lane": 0, "type": "fence" }, { "lane": 1, "type": "dog" }], "goldLane": 2 }
+      ]
+    },
+    {
+      "id": "pit_jump_valley",
+      "length": 20,
+      "hard": false,
+      "rows": [
+        { "offsetZ": 5, "obstacles": [{ "lane": 0, "type": "hole" }], "goldLane": 2 },
+        { "offsetZ": 14, "obstacles": [{ "lane": 2, "type": "hole" }, { "lane": 1, "type": "fence" }], "goldLane": 0 }
+      ]
+    }
+  ]
+}

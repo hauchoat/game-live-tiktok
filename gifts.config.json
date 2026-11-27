@@ -1,0 +1,90 @@
+{
+  "senderCooldownMs": 3000,
+  "spawnDistanceAhead": 40,
+  "rules": {
+    "maxBlockedLanesPerRow": 2,
+    "cooldownSecondsPerViewer": 3,
+    "maxQueueLength": 200,
+    "queueIntervalMs": 350,
+    "giftPressureDecayPerSecond": 1,
+    "giftSpeedBonus": 8,
+    "giftDamageMultiplier": 2,
+    "spawnDistanceMeters": 40,
+    "minRowGapMeters": 8,
+    "maxObstaclesAhead": 36,
+    "maxUnitsPerGift": 5,
+    "giftPressurePerUnit": 12
+  },
+  "bot": {
+    "lookAheadMeters": 19,
+    "dramaRate": 0.02,
+    "dangerCloseMargin": 3.4,
+    "reactionSeconds": 0.12,
+    "pressureReactionReduction": 0.18
+  },
+  "defaultGift": { "team": "catch", "obstacle": "yarn", "count": 1 },
+  "obstacles": {
+    "gate": { "label": "Cổng chắn", "damage": 1, "length": 1.5, "speedOffset": 0, "allowJump": false, "allowSlide": true },
+    "hole": { "label": "Hố nứt", "damage": 1, "length": 2.6, "speedOffset": 0, "allowJump": true, "allowSlide": false },
+    "fence": {
+      "label": "Hàng rào",
+      "difficulty": 1,
+      "damage": 1,
+      "length": 1.2,
+      "speedOffset": 0,
+      "allowJump": true,
+      "allowSlide": false,
+      "spawnWeight": 35
+    },
+    "yarn": {
+      "label": "Cuộn len",
+      "difficulty": 2,
+      "damage": 1,
+      "length": 1.4,
+      "speedOffset": -1.5,
+      "allowJump": true,
+      "allowSlide": true,
+      "spawnWeight": 30
+    },
+    "dog": {
+      "label": "Chó",
+      "difficulty": 3,
+      "damage": 1,
+      "length": 1.8,
+      "speedOffset": -2.0,
+      "allowJump": false,
+      "allowSlide": true,
+      "spawnWeight": 20
+    },
+    "pit": {
+      "label": "Hố",
+      "difficulty": 2,
+      "damage": 1,
+      "length": 2.6,
+      "speedOffset": 0,
+      "allowJump": true,
+      "allowSlide": false,
+      "spawnWeight": 15
+    }
+  },
+  "gifts": {
+    "Yêu bạn": { "coins": 1, "obstacle": "yarn", "count": 1, "aliases": ["Love You"] },
+    "Hiểu ý tôi chứ": { "coins": 1, "obstacle": "yarn", "count": 1, "aliases": ["You Know"] },
+    "Thả tim cho tôi": { "coins": 1, "obstacle": "yarn", "count": 1, "aliases": ["Heart Me"] },
+    "Đỉnh": { "coins": 1, "obstacle": "yarn", "count": 1, "aliases": ["Awesome", "GG"] },
+    "Bánh sinh nhật": { "coins": 1, "obstacle": "yarn", "count": 1, "aliases": ["Birthday Cake"] },
+    "Kem ốc quế": { "coins": 1, "obstacle": "yarn", "count": 1, "aliases": ["Ice Cream Cone"] },
+    "Que phát sáng": { "coins": 1, "obstacle": "yarn", "count": 1, "aliases": ["Glow Stick"] },
+    "Hoa hồng": { "coins": 1, "obstacle": "fence", "count": 2, "aliases": ["Rose"] },
+    "quả đào": { "coins": 5, "obstacle": "fence", "count": 2, "aliases": ["Peach"] },
+    "Bắn tim": { "coins": 5, "obstacle": "hole", "count": 1, "aliases": ["Finger Heart"] },
+    "Bing Chilling": { "coins": 5, "obstacle": "hole", "count": 1 },
+    "Rosa": { "coins": 10, "obstacle": "fence", "count": 4 },
+    "Vòng cổ tình bạn": { "coins": 10, "obstacle": "fence", "count": 2, "aliases": ["Friendship Necklace"] },
+    "Chú heo may mắn": { "coins": 10, "obstacle": "hole", "count": 2, "aliases": ["Lucky Pig"] },
+    "Cỏ bốn lá": { "coins": 10, "obstacle": "yarn", "count": 3, "aliases": ["Four-Leaf Clover"] },
+    "little kisses": { "coins": 20, "obstacle": "gate", "count": 1 },
+    "Nước hoa": { "coins": 20, "obstacle": "gate", "count": 1, "aliases": ["Perfume"] },
+    "Bánh vòng": { "coins": 30, "obstacle": "dog", "count": 1, "aliases": ["Doughnut"] }
+  }
+}

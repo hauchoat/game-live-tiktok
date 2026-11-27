@@ -1,0 +1,30 @@
+{
+  "name": "cats-and-gold",
+  "version": "1.0.0",
+  "description": "Cats and Gold - TikTok LIVE Endless Runner Game",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "benchmark": "node scripts/benchmark.js",
+    "check:graphics": "node scripts/graphics-browser-check.cjs",
+    "soak": "node scripts/soak.js",
+    "dev": "concurrently -n SERVER,CLIENT -c cyan,magenta \"node --watch server/index.js\" \"vite client\"",
+    "build": "vite build client",
+    "start": "node server/index.js",
+    "mock": "concurrently -n MOCK,CLIENT -c yellow,magenta \"node server/index.js --mock\" \"vite client\""
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.170.0",
+    "tiktok-live-connector": "^2.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  }
+}
